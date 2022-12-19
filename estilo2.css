@@ -1,0 +1,454 @@
+.encabezado2 {
+    background-color: rgb(169, 223, 191);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.encabezado2 .botones2 {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    width: 560px;
+}
+
+.encabezado2 #salir2 {
+    border: none;
+}
+
+.encabezado2 #salir2:hover {
+    cursor: pointer;
+}
+
+
+.encabezado2 .botones2 button {
+    padding: 10px;
+    border: none;
+    height: 40px;
+    width: 90px;
+    background-color: greenyellow;
+}
+
+.encabezado2 .botones2 button:hover {
+    cursor: pointer;
+}
+
+.encabezado2 img {
+    width: 40px;
+
+}
+
+.usuario .main2 {
+    min-height: 90vh;
+    padding: 15px;
+    box-sizing: border-box;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+
+}
+
+.usuario {
+    display: none;
+}
+
+.main2 .music-user {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    height: 330px;
+    overflow: auto;
+
+
+}
+
+.main2 .arts-user>button {
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+.main2 .conten-arts .lista {
+    display: flex;
+    width: 100%;
+    background-color: beige;
+    min-height: 260px;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: auto;
+    padding-left: 30px;
+}
+
+.main2 .songs {
+    width: 220px;
+    height: 220px;
+    background-color: green;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+
+.main2 .music-user .Ctarjeta {
+    width: 260px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+    position: relative;
+}
+
+.main2 .Ctarjeta button {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    min-width: 60px;
+    min-height: 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.main2 .songs button {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.main2 .artista {
+    width: 220px;
+    height: 220px;
+    background-color: cornflowerblue;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 15px;
+
+}
+
+.main2 .playlist-user {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+
+.main2 .playlist-user .cont-p{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+}
+
+.main2 .podcast-user {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 70%;
+    height: 492px;
+    margin: 10px;
+    overflow: auto;
+    padding: 10px;
+}
+.main2 .public-podc {
+    display: none;
+    width: 30%;
+    background-color: brown;
+    height: 370px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main2 .public-podc input {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+
+}
+
+.main2 .public-podc button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(105, 167, 194);
+    border: none;
+}
+.main2 .podcast-user .card-podcast {
+    width: 260px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 7px 29px 0px rgba(78, 78, 78, 0.2);
+
+}
+
+/*
+.main2 .playlist-user h2 {
+    display: block;
+}
+*/
+
+.main2 .playlist-user .tarjeta {
+    width: 260px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+
+.main2 .arts-user {
+    display: none;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+.main2 .conten-arts{
+    display: block;
+    width: 100%;
+}
+
+.main2 .footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    height: 180px;
+    width: 100%;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.main2 .footer #date {
+    width: 160px;
+    height: 50px;
+    border: none;
+    background-color: lightskyblue;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.main2 #temporal {
+    width: 220px;
+    height: 160px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.main2 .footer button {
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+
+.main2 .usuarios {
+    width: 100%;
+    height: 180px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+.main2 .amigo {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.main2 .amigos {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.main2 .bloqueos {
+    display: none;
+    width: 100%;
+}
+
+.main2 .bloqueos .user-bloq{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+
+.main2 .bloqueos> button {
+    position: relative;
+    top: 25px;
+    width: 130px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+
+}
+
+.main2 .amigos> button {
+    position: relative;
+    top: 25px;
+    width: 130px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.main2 .agregar-amigo {
+    width: 170px;
+    height: 160px;
+    background-color: rgb(250, 215, 160);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+.main2 .agregar-amigo button {
+    display: block;
+    margin-bottom: 10px;
+    width: 110px;
+    height: 30px;
+}
+
+.main2 .amigo-register {
+    width: 170px;
+    height: 130px;
+    background-color: rgb(218, 247, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16pt;
+    margin: 10px;
+}
+
+.main2 .public-songs {
+    display: none;
+    flex-direction: column;
+    width: 350px;
+    background-color: cornflowerblue;
+    height: 310px;
+    margin: 10px;
+    padding: 22px;
+    text-align: center;
+    justify-content: center;
+}
+
+.main2 .public-songs input[type="text"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+
+}
+
+.main2 .public-songs input[type="date"] {
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+
+}
+
+.main2 .public-songs button {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+}
+

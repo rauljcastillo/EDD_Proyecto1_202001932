@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muster Cloud</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./estilo1.css">
+    <link rel="stylesheet" href="./estilo2.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <label class="labels" for="">Usuario</label>
+            <input type="text" id="user" class="inputs" placeholder="Ingresa usuario" required>
+
+            <label class="labels" for="">Contraseña</label>
+            <input type="password" id="pass" class="inputs" placeholder="Ingresa contraseña" required>
+
+            <label for="" class="label1"><input type="checkbox" id="check" />Administrador</label>
+
+            <input type="submit" value="Ingresar">
+            <button id="boton1">Registrarme</button>
+
+        </form>
+    </div>
+
+    <div class="registro">
+        <form action="">
+            <label for="usuario" class="labels">Usuario</label>
+            <input type="text" id="usuario" required>
+            <label for="nombre" class="labels">Nombre</label>
+            <input type="text" id="nombre" required>
+            <label for="dpi" class="labels">Dpi</label>
+            <input type="text" id="dpi" required>
+            <label for="telef" class="labels">Telefono</label>
+            <input type="text" id="telef" required>
+            <label for="pass" class="labels">Contraseña</label>
+            <input type="password" id="contrasenia" required>
+            <input type="submit" value="Registrar">
+            <button id="boton2">Iniciar sesion</button>
+        </form>
+    </div>
+
+    <div class="usuario">
+        <div class="encabezado2">
+            <button id="salir2"><img src="./img1.png" alt=""></button>
+            <div class="botones2">
+                <button id="btnMusicP">Música</button>
+                <button id="btnPlay">PlayList</button>
+                <button id="btnArts">Artistas</button>
+                <button id="btnAmig">Amigos</button>
+                <button id="btnBloq">Bloqueados</button>
+                <button id="btnPodC">Podcast</button>
+            </div>
+        </div>
+
+        <div class="main2">
+
+            <div class="music-user">
+            </div>
+
+            <!--Este div es del formulario para publicar canciones-->
+            <div class="public-songs">
+                <input type="text" id="pub-song" placeholder="Canción">
+                <input type="text" id="pub-durat" placeholder="Duración">
+                <input type="text" id="pub-gener" placeholder="Género">
+                <input type="date" id="pub-date">
+                <button type="submit" name="pub">Publicar</button>
+                <button type="submit" name="prog">Programar</button>
+            </div>
+
+            <!--Este div es el pie de pagina que muestra la cancion programada-->
+            <div class="footer">
+                <button onclick="mostrarPublic()">Publicar</button>
+                <input type="date" id="date">
+                <div id="temporal">
+
+                </div>
+            </div>
+
+            <!--Este div almacena el contenido de la playlist-->
+            <div class="playlist-user">
+                <h2>PlayList</h2>
+                <div class="cont-p">
+
+                </div>
+            </div>
+
+            <!--Este div almacena los artistas con sus canciones-->
+            <div class="arts-user">
+                <h2>Artistas</h2>
+                <button onclick="ordenAsc()">Ascendente</button>
+                <button onclick="ordenDesc()">Descendente</button>
+                <div class="conten-arts">
+
+                </div>
+            </div>
+
+            <!--Este div  muestra la formulario para agregar un nuevo podcast-->
+            <div class="public-podc">
+                <h2>Publicar Podcast</h2>
+                <form action="">
+                    <input type="text" placeholder="Nombre" id="nameP" required>
+                    <input type="text" placeholder="Tema" id="temaP" required>
+                    <input type="text" placeholder="Invitados" id="invitP" required>
+                    <input type="text" placeholder="Duración" id="duracP" required>
+                    <button type="submit">Publicar</button>
+                </form>
+            </div>
+
+            <!--Este div almacena el contenido del podcast-->
+            <div class="podcast-user">
+            </div>
+
+            <!--Este div es la seccion de amigos-->
+            <div class="amigos">
+                <h3>Usuarios</h3>
+                <div class="usuarios">
+
+                </div>
+                <h3>Amigos</h3>
+                <div class="amigo">
+
+                </div>
+                <button onclick="eliminardePila()">Eliminar</button>
+            </div>
+
+            <!--Este div muestra el contenido de amigos bloqueados-->
+            <div class="bloqueos">
+                <div class="user-bloq">
+
+                </div>
+                <button onclick="eliminardeCola()">Eliminar</button>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="admin">
+        <div class="encabezado">
+            <button id="salir"><img src="./img1.png" alt=""></button>
+            <div class="botones">
+                <button id="btnUser">Usuarios</button>
+                <button id="btnArtis">Artistas</button>
+                <button id="btnCan">Canciones</button>
+                <button id="btnPod">Podcast</button>
+                <button id="btnMusic">Musica programada</button>
+            </div>
+        </div>
+        <div class="contenedorp">
+            <div class="aside">
+                <button id="g-usuarios" onclick="graficaUsers()" >Usuarios</button>
+                <button id="g-artistas">Artistas</button>
+                <button id="g-musica">Musica Programada</button>
+                <button id="g-pod">Podcast</button>
+            </div>
+            <div class="main">
+                <div class="CargarUs">
+                    <form action="">
+                        <h2>Cargar archivo usuarios</h2>
+                        <input type="file" id="Usuarios" required>
+                        <button type="submit">Aceptar</button>
+                    </form>
+                </div>
+                <div class="CargarArt">
+                    <form action="">
+                        <h2>Cargar archivo artistas</h2>
+                        <input type="file" id="artist" required>
+                        <button type="submit">Aceptar</button>
+                    </form>
+
+                </div>
+                <div class="CargarCan">
+                    <form action="">
+                        <h2>Cargar archivo canciones</h2>
+                        <input type="file" id="songs" required>
+                        <button type="submit">Aceptar</button>
+                    </form>
+                </div>
+                <div class="Podc">
+                    <form action="">
+                        <h2>Cargar Podcast</h2>
+                        <input type="file" id="podca" required>
+                        <button type="submit">Aceptar</button>
+                    </form>
+                </div>
+                <div class="MusicP">
+                    <form action="">
+                        <h2>Cargar musica programada</h2>
+                        <input type="file" id="musicP" required>
+                        <button type="submit">Aceptar</button>
+                    </form>
+                </div>
+
+                <div id="graph-users">
+                </div>
+
+                <div id="graph-artista">
+                </div>
+
+                <div id="graph-calendar">
+                </div>
+
+                <div id="graph-podcast">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./Estructuras/ArbolBinario.js"></script>
+    <script src="./Estructuras/cola.js"></script>
+    <script src="./Estructuras/ListadeListas.js"></script>
+    <script src="./Estructuras/Matriz.js"></script>
+    <script src="./Estructuras/pila.js"></script>
+    <script src="./Estructuras/playlist.js"></script>
+    <script src="./Estructuras/usuarios.js"></script>
+    <script src="./Estructuras/logica.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+</body>
+
+</html>
